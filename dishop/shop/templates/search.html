@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Поиск</title>
+    <link rel="stylesheet" href="{% static 'css/orders.css' %}">
+    <link rel="icon" href="{% static 'logo.jpg' %}" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<h1>Список заказов для:</h1>
+<h2>{{ list_of_all_orders.0.customer }}</h2>
+{% block content %}
+<table class="tableorders">
+    <tr>
+    <th>Заказанный продукт</th>
+    <th>Дата заказа</th>
+</tr>
+    {% for order in list_of_all_orders %}
+    <tr>
+        <td>{{ order.product }}</td>
+        <td>{{ order.order_date }}</td>
+    </tr>
+    {% endfor %}
+</table>
+<div class="button">
+    <a class="bnt2" href="{% url 'shop:orders' %}" type="submit">Вернуться назад</a>
+</div>
+{% endblock content %}
+
+</body>
+</html>
