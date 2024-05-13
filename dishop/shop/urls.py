@@ -9,8 +9,3 @@ urlpatterns = [
     path('orders', OrdersListView.as_view(), name='orders'),
     path('', HomePageView.as_view(), name='home'),
 ]
-
-
-
-
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
