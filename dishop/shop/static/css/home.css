@@ -1,0 +1,119 @@
+{% load static %}
+
+body {
+    background: #0D0D0D;
+}
+
+.home_back{
+/* Фон картинка */
+    position: absolute;
+    width: 1920px;
+    height: 956px;
+    overflow: hidden;
+    background: url("home_back.jpg");
+    background-size: cover;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.6;
+}
+
+.shop_name {
+    /* Прямоугольник 2 */
+    position: absolute;
+    width: 912px;
+    height: 129.1px;
+    left: 0;
+    right: 0;
+    top: 34px;
+    bottom: -34px;
+    color: rgb(255, 255, 255);
+    font-family: appleberry;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 65px;
+    letter-spacing: 0px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 83px;
+    background: rgba(0, 0, 0, 0.63);
+
+}
+
+.greating {
+    /* Привет, name! */
+    position: absolute;
+    width: 400px;
+    height: 45.7px;
+    left: 1475px;
+    right: 45px;
+    top: 70px;
+    bottom: 766.3px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-family: appleberry;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 59px;
+    letter-spacing: 2px;
+    text-align: left;
+
+
+}
+
+.menu_rect {
+    /* Прямоугольник 3 */
+    position: absolute;
+    width: 578.67px;
+    height: 650px;
+    left: 18.67px;
+    right: -0.33px;
+    top: 211.36px;
+    bottom: -211.36px;
+    border-radius: 40px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.menu_list {
+    /* Каталог Личный кабинет Корзина Ссылка Ссылка Ссылка */
+    position: absolute;
+    left: 50px;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-family: appleberry;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 90px;
+    letter-spacing: 2px;
+    text-align: left;
+
+}
+
+.tagline {
+    /* Живи! Кайфуй! Купи монитор! */
+    position: absolute;
+    width: 914.67px;
+    height: 245.63px;
+    left: 960px;
+    right: 45.33px;
+    top: 506.12px;
+    bottom: 114.25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-family: appleberry;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 59px;
+    letter-spacing: 2px;
+    text-align: left;
+
+
+}

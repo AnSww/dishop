@@ -1,18 +1,40 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>home page</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
 </head>
 <body>
-    {% if user.is_authenticated %}
-        <h1>Привет, {{ user.username }} ! Это мой магазин!</h1>
-    {% else %}
-        <p>Вы не вошли на сайт</p>
-        <a href="{% url 'login' %}">Войти</a>
-    {% endif %}
+<div class="home_back">
 
-    <p>hello world</p>
+</div>
+<div class="shop_name">Магазин Мониторов</div>
+<div class="greating">
+    {% if user.is_authenticated %}
+    <p>Привет, {{ user.username }}!<br><a href="{% url 'logout' %}">Выйти</a></p>
+
+
+    {% else %}
+    <p>Вы не вошли на сайт</p>
+    <a href="{% url 'login' %}">Войти</a>
+    {% endif %}
+</div>
+<div class="menu_rect">
+    <dl class="menu_list">
+        <dt><a href="list">Каталог</a></dt>
+        <dt><a>Личный кабинет</a></dt>
+        <dt><a>Корзина</a></dt>
+        <dt><a>Ссылка</a></dt>
+        <dt><a>Ссылка</a></dt>
+        <dt><a>Ссылка</a></dt>
+
+    </dl>
+</div>
+<div class="tagline">Живи! Кайфуй! Купи монитор!</div>
+
 
 </body>
 </html>
+

@@ -1,0 +1,21 @@
+.greating
+{
+    /* Привет, name! */
+    position: absolute;
+    width: 300px;
+    height: 40px;
+    left: 1106px;
+    right: 34px;
+    top: 30px;
+    bottom: 3002px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-family: appleberry;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 59px;
+    letter-spacing: 2px;
+    text-align: left;
+}

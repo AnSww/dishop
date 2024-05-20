@@ -1,0 +1,130 @@
+body {
+    background: rgb(13, 13, 13);
+}
+
+.logo_list {
+    /* Каталог */
+    position: absolute;
+    width: 293px;
+    height: 49px;
+    left: 308px;
+    right: 1319px;
+    top: 46px;
+    bottom: 1078px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-family: appleberry;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 59px;
+    letter-spacing: 2px;
+    text-align: left;
+}
+
+.to_home {
+/* Главная */
+    position: absolute;
+    width: 293px;
+    height: 49px;
+    left: 1495px;
+    right: 132px;
+    top: 46px;
+    bottom: 1078px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-family: appleberry;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 59px;
+    letter-spacing: 2px;
+    text-align: left;
+}
+
+.cat_label {
+    /* Категории */
+    position: absolute;
+    width: 206px;
+    height: 49px;
+    left: 132px;
+    right: 1582px;
+    top: 185px;
+    bottom: 939px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-family: appleberry;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 59px;
+    letter-spacing: 2px;
+    text-align: left;
+
+}
+
+.sidebar {
+    position: absolute;
+    width: 300px;
+    height: auto;
+    left: 132px;
+    right: 1582px;
+    top: 185px;
+    bottom: 939px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-family: appleberry;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 59px;
+    letter-spacing: 2px;
+    text-align: left;
+}
+
+.c_list {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    top: 60px;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-family: appleberry;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 2px;
+    text-align: left;
+    flex-wrap: wrap;
+
+}
+
+.product_list {
+    /* Сочетание 12 */
+    position: absolute;
+    width: 1310px;
+    height: 935px;
+    left: 453px;
+    top: 185px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    color: rgb(255, 255, 255);
+    width: 350px;
+    font-family: appleberry;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-right: 80px;
+}
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>list</title>
+    <link rel="stylesheet" href="{% static 'css/list.css' %}">
+</head>
+<body>
+
+<div class="logo_list">Каталог</div>
+<div class="to_home">Главная</div>
+{% block content %}
+<div class="sidebar">
+    <h3>Категории</h3>
+    <ul class="c_list">
+        <li {% if not category %} class="selected" {% endif %}>
+            <a href="{% url 'shop:product_list' %}">All</a>
+        </li>
+        {% for c in categories %}
+        <li {% if category.slug == c.slug %} class="selected"
+            {% endif %}>
+            <a href="{{ c.get_absolute_url }}">{{ c.name }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+<div class="product_list">
+    {% for product in products %}
+    <div class="item">
+        <a href="{{ product.get_absolute_url }}">
+            <img src="{% if product.image %}{{ product.image.url }}{% else %}{% static 'img/no_image.png' %}{% endif %}">
+        </a>
+        <br>
+        <a href="{{ product.get_absolute_url }}" style="text-align: center;">{{ product.name }}</a>
+        ${{ product.price }}
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
+</body>
+</html>
+
