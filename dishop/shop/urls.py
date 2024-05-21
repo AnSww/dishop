@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path, include
 from .views import HomePageView, CustomersListView, OrdersListView, SearchView, product_list, product_detail
 
 app_name = 'shop'
@@ -9,7 +9,7 @@ urlpatterns = [
     path('<slug:category_slug>/', product_list, name='product_list_by_category'),
 
 
-
+    path('cart/', include('cart.urls', namespace='cart')),
     path('search', SearchView.as_view(), name='search'),
     path('customers', CustomersListView.as_view(), name='customers'),
     path('orders', OrdersListView.as_view(), name='orders'),

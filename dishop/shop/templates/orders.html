@@ -1,13 +1,15 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/orders.css' %}">
 </head>
 <body>
-<h1>Список всех заказов:</h1>
+<h1 id="lable_list">Список всех заказов:</h1>
 {% block content %}
-<table>
+<table class="table">
     <tr>
         <th>Номер заказа</th>
         <th>Продукт</th>
@@ -24,7 +26,7 @@
     {% endfor %}
 </table>
 {% endblock content %}
-<form action="{% url 'shop:search' %}" method="GET">
+<form action="{% url 'shop:search' %}" method="GET" class="search">
     {% csrf_token %}
     <input name="q" type="text" placeholder="Введите имя или фамилию...">
 </form>

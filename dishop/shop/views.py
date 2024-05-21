@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404
 from django.views.generic import TemplateView, ListView
 from django.db.models import Q
 from .models import Customer, Order, Category, Product
+from cart.forms import CartAddProductForm
 
 
 class HomePageView(TemplateView):
@@ -52,6 +53,9 @@ def product_detail(request, id, slug):
                                 id=id,
                                 slug=slug,
                                 available=True)
+    cart_product_form = CartAddProductForm()
+
     return render(request,
                   'product/detail.html',
-                  {'product': product})
+                  {'product': product,
+                   'cart_product_form': cart_product_form})
