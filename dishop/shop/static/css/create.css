@@ -1,0 +1,146 @@
+/* Общие стили */
+body {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 130px;
+}
+
+h1, h3 {
+    color: #ffffff;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Стили для блока информации о заказе */
+.order-info {
+    background-color: #2c2c2c;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.order-info h3 {
+    margin-top: 0;
+}
+
+.order-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.order-info li {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #444;
+    padding: 10px 0;
+}
+
+.order-info p {
+    font-weight: bold;
+    text-align: right;
+}
+
+/* Стили для формы заказа */
+.order-form {
+    background-color: #2c2c2c;
+    border-radius: 10px;
+    padding: 20px;
+    padding-right: 70px;
+}
+
+.order-form p {
+    margin: 0 0 15px;
+}
+
+.order-form input[type="submit"] {
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.order-form input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Стили для полей формы */
+.order-form input[type="text"],
+.order-form input[type="email"],
+.order-form input[type="tel"],
+.order-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #3c3c3c;
+    color: #ffffff;
+}
+
+.order-form input[type="text"]::placeholder,
+.order-form input[type="email"]::placeholder,
+.order-form input[type="tel"]::placeholder,
+.order-form textarea::placeholder {
+    color: #aaaaaa;
+}
+
+/* Общие стили */
+body {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h3 {
+    color: #ffffff;
+}
+
+p {
+    color: #cccccc;
+    font-size: 1.2em;
+}
+
+strong {
+    color: #ffffff;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Стили для блока контента */
+.content {
+    background-color: #2c2c2c;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.content h1 {
+    margin-top: 0;
+    font-size: 2em;
+    text-align: center;
+}
+
+.content p {
+    font-size: 1.2em;
+    text-align: center;
+}

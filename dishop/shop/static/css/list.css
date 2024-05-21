@@ -2,6 +2,15 @@ body {
     background: rgb(13, 13, 13);
 }
 
+a,
+a:visited,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
 .logo_list {
     /* Каталог */
     position: absolute;
@@ -42,6 +51,7 @@ body {
     line-height: 59px;
     letter-spacing: 2px;
     text-align: left;
+    text-decoration: none;
 }
 
 .cat_label {
