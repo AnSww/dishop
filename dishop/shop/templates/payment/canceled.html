@@ -1,0 +1,10 @@
+{% extends "product/list.html" %}
+{% load static %}
+
+{% block title %}Payment canceled{% endblock %}
+<link rel="stylesheet" href="{% static 'css/completed.css' %}">
+{% block content %}
+
+     <h1 class="success-title">Payment canceled</h1>
+     <p class="success-message">Your payment has been canceled. Please try again.</p>
+{% endblock %}

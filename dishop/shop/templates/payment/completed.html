@@ -1,0 +1,11 @@
+{% extends "product/list.html" %}
+{% load static %}
+
+
+{% block title %}Payment successful{% endblock %}
+<link rel="stylesheet" href="{% static 'css/completed.css' %}">
+{% block content %}
+
+    <h1 class="success-title">Your payment was successful</h1>
+    <p class="success-message">Your payment has been processed successfully.</p>
+{% endblock %}

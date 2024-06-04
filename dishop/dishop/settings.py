@@ -40,6 +40,10 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
+STRIPE_PUBLISHABLE_KEY = 'pk_test_51PIptXCcCcq46GGFtH07fVLuVzzIbaiuNfATDS15A9NvzCDKZZhVhtPC9Vyn7WT91cyCEERwLyDklZ1EqvVXe3qp00yuHVSA0I' # Публикуемый ключ
+STRIPE_SECRET_KEY = 'sk_test_51PIptXCcCcq46GGFYoKEzjplUR7C2veL76Fw7buxYJnbGHEwSgE7FmLDEqu1QdYRK3IFPddC5Vm8xIU5i3J1iuLm00xy6LPG4e' # Секретный ключ
+STRIPE_API_VERSION = '2022-08-01'
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -51,7 +55,8 @@ INSTALLED_APPS = [
     'shop',
     'accounts',
     'cart',
-    'orders'
+    'orders',
+    'payment.apps.PaymentConfig',
 ]
 
 MIDDLEWARE = [
