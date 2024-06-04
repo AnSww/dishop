@@ -12,16 +12,6 @@ class Customer(models.Model):
         return '%s %s' % (self.first_name, self.last_name)
 
 
-class Order(models.Model):
-    order_id = models.AutoField("ID", primary_key=True)
-    product = models.CharField("Product", max_length=128)
-    order_date = models.DateField("Order Date")
-    customer = models.ForeignKey(Customer, on_delete=models.PROTECT)
-
-    def __str__(self):
-        return '%s %s' % (self.order_id, self.product)
-
-
 class Category(models.Model):
     name = models.CharField(max_length=200)
     slug = models.SlugField(max_length=200,
