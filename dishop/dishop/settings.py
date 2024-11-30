@@ -96,9 +96,9 @@ WSGI_APPLICATION = 'dishop.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'djangodb',
+        'NAME': 'dishop_db',
         'USER': 'root',
-        'PASSWORD': '11441258',
+        'PASSWORD': '1144',
         'HOST': 'localhost',
         'PORT': '3306',
     }
